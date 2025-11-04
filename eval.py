@@ -18,6 +18,8 @@ def validate(model, val_loader, criterion):
             total += targets.size(0)
             correct += predicted.eq(targets).sum().item()
 
+            print(f"-- evaluation batch {batch_idx} done")
+
     val_loss = val_loss / len(val_loader)
     val_accuracy = 100. * correct / total
 

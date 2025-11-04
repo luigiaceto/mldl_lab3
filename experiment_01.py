@@ -34,7 +34,7 @@ if __name__ == "__main__":
   num_epochs = 10
   batch_size = 32
 
-  model = BasicNet().cuda()
+  model = CustomNet().cuda()
   criterion = torch.nn.CrossEntropyLoss()
   optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum)
 

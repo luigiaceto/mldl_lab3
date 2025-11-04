@@ -18,6 +18,7 @@ def train(epoch, model, train_loader, criterion, optimizer):
         _, predicted = outputs.max(1)
         total += targets.size(0)
         correct += predicted.eq(targets).sum().item()
+        print(f"-- training batch {batch_idx} done")
 
     train_loss = running_loss / len(train_loader)
     train_accuracy = 100. * correct / total
