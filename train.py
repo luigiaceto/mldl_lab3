@@ -1,5 +1,3 @@
-from models.customnet import CustomNet
-
 def train(epoch, model, train_loader, criterion, optimizer):
     model.train()
     running_loss = 0.0
