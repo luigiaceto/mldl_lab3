@@ -1,5 +1,5 @@
 import torch
-from dataset import getDataset
+from .dataset import getDataset
 
 def getDataLoader(train_path, val_path, batch_size):
   train, val = getDataset(train_path, val_path)

@@ -1,4 +1,4 @@
-from models.customnet import CustomNet
+from .models.customnet import CustomNet
 
 def train(epoch, model, train_loader, criterion, optimizer):
     model.train()
