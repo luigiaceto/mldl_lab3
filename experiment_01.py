@@ -1,8 +1,8 @@
-from .models.customnet import CustomNet
-from .models.basicNet import BasicNet
-from .dataset.dataloader import getDataLoader
-from .train import train
-from .eval import validate
+from models.customnet import CustomNet
+from models.basicNet import BasicNet
+from dataset.dataloader import getDataLoader
+from train import train
+from eval import validate
 import torch
 import os
 import shutil
